@@ -14,7 +14,7 @@ const start = (options = {}) => {
 
 const stop = () => {
 	console.log = cl
-}
+};
 
 module.exports = {
 	start,
