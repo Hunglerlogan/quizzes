@@ -11,7 +11,10 @@ function add(a, b) {
 }
 
 // Write a function called concatenateStrings which accepts two strings, joins them together, and returns the joined string.
-const concatenateStrings = add;
+function concatenateStrings(a, b) {
+    return a + b;
+}
+// Did you notice that add and concatenateStrings are exactly the same?
 
 // Write a function called shorten that accepts a single string.  
 // The function should remove all the spaces in the string and return the new string.
