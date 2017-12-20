@@ -6,19 +6,28 @@ const TODO = 'TODO';
 // DIRECTIONS: complete the prompts below, replacing TODO with your solution to each prompt:
 
 // Write a function called add which accepts two numbers as arguments and returns their sum.
-TODO
+function add(a, b) {
+	return a + b;
+}
 
 // Write a function called concatenateStrings which accepts two strings, joins them together, and returns the joined string.
-TODO
+const concatenateStrings = add;
 
 // Write a function called shorten that accepts a single string.  
 // The function should remove all the spaces in the string and return the new string.
 // Don't spend too much time on this problem if you get stuck.
-TODO
+function shorten(str) {
+	return str.replace(/ /g, '');
+	// also acceptable:
+	// return str.replace(/\s/g, '');
+	// return str.split(' ').join('');
+}
 
 // write a function called greeter that does not take arguments.  
 // The function should use console.log to print 'hello'.
-TODO
+function greeter() {
+	console.log('hello');
+}
 
 
 // The following tests should pass when you have successfully completed the above prompts:
