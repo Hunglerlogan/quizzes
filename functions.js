@@ -10,10 +10,10 @@ const TODO = 'TODO';
 // Part 1
 mockCl.start(); // IGNORE ME
 // Assign the string ‘Good morning' to a variable named `greeting`.
-TODO
+const greeting = 'Good morning';
 
 // Invoke console.log to print `greeting`.
-TODO
+console.log(greeting);
 
 
 // ============================================================================
@@ -22,10 +22,10 @@ TODO
 let kyleStatus = 'Kyle is hungry.';
 
 // Use `String.prototype.replace` to change your status to 'Kyle ate a bagel.'
-TODO
+kyleStatus = kyleStatus.replace('is hungry', 'ate a bagel');
 
 // Print your status using console.log.
-TODO
+console.log(kyleStatus);
 
 mockCl.stop();  // IGNORE ME
 // ============================================================================
@@ -60,7 +60,10 @@ const map = {
 	'bought a car': 'is looking for a comfortable couch'
 };
 
-TODO
+function updateStatus(teamMember) {
+    teamMember.statusMessage = teamMember.name + ' ' + teamMember.status + '.';
+    return teamMember.statusMessage.replace(teamMember.status, map[teamMember.status]);
+}
 
 
 // =======================================================================================
